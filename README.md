@@ -1,4 +1,4 @@
-# 🎓 LearnTrack AI: Student Performance Prediction
+# LearnTrack AI: Student Performance Prediction
 
 LearnTrack AI is a machine learning pipeline for predicting student pass probability based on behavioral logs and lab submission patterns.
 
@@ -6,7 +6,7 @@ The system leverages ensemble learning with gradient boosting models to optimize
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 - End-to-end ML pipeline: data processing → feature engineering → model training → evaluation  
 - Ensemble of **LightGBM, XGBoost, CatBoost**  
@@ -16,7 +16,7 @@ The system leverages ensemble learning with gradient boosting models to optimize
 
 ---
 
-## ⚙️ Pipeline Overview
+## Pipeline Overview
 
 ### 1. Data Processing
 - Extract features from raw student activity logs  
@@ -46,24 +46,7 @@ The system leverages ensemble learning with gradient boosting models to optimize
 
 ---
 
-## 📊 Results
-
-- Strong performance on leaderboard (AUPRC metric)  
-- Improved generalization through ensemble + feature engineering  
-- Robust against class imbalance  
-
----
-
-## 🛠 Tech Stack
-
-- Python  
-- Pandas, NumPy  
-- Scikit-learn  
-- LightGBM, XGBoost, CatBoost  
-
----
-
-## 📂 Future Improvements
+## Future Improvements
 
 - Add deep learning models (LSTM for sequence modeling)  
 - Feature selection & dimensionality reduction  
