@@ -10,7 +10,7 @@ The system leverages ensemble learning with gradient boosting models to optimize
 
 - End-to-end ML pipeline: data processing → feature engineering → model training → evaluation  
 - Ensemble of **LightGBM, XGBoost, CatBoost**  
-- Advanced **time-series feature engineering (50+ features)**  
+- Advanced **feature engineering (50+ features)**  
 - Robust validation with **Stratified 7-Fold Cross Validation**  
 - Optimized for **imbalanced classification (AUPRC-focused)**  
 
@@ -63,22 +63,8 @@ The system leverages ensemble learning with gradient boosting models to optimize
 
 ---
 
-## 📌 Highlights
-
-- Designed **50+ high-impact features** from raw logs  
-- Built a **reproducible ML pipeline**  
-- Applied **ensemble techniques commonly used in Kaggle competitions**
-
----
-
 ## 📂 Future Improvements
 
 - Add deep learning models (LSTM for sequence modeling)  
 - Feature selection & dimensionality reduction  
 - Real-time prediction system  
-
----
-
-## 👤 Author
-
-Nguyen Dang Khoa
