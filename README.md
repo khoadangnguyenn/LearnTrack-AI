@@ -1,14 +1,84 @@
-# LearnTrack AI: Predictive Academic Modeling
+# 🎓 LearnTrack AI: Student Performance Prediction
 
-LearnTrack AI is an advanced machine learning pipeline designed to predict student pass probabilities based on their academic behaviors and lab report submission patterns. 
+LearnTrack AI is a machine learning pipeline for predicting student pass probability based on behavioral logs and lab submission patterns.
 
-This project utilizes a powerful ensemble of gradient boosting frameworks (LightGBM, XGBoost, CatBoost) to maximize the Area Under the Precision-Recall Curve (AUPRC).
+The system leverages ensemble learning with gradient boosting models to optimize **AUPRC (Area Under Precision-Recall Curve)** — a key metric for imbalanced classification.
 
-## Pipeline Workflow
+---
 
-- **Data Loading**: Engineered over 50 behavioral and time-series features directly from raw log data. This includes temporal patterns (time of day, weekend vs. weekday submissions), grade trajectories, performance momentum, rolling statistics, and efficiency scores.
-- **Feature Engineering**: Implements a Stratified 7-Fold Cross Validation approach to ensure stable and generalizable performance across different student cohorts.
-- **Model Training**:
-  - Folds the data into 7 stratified splits.
-  - Trains LightGBM, XGBoost, and CatBoost model concurrently.
-  - Tracks out-of-fold (OOF) predictions to compute the OOF AUPRC.
+## 🚀 Key Features
+
+- End-to-end ML pipeline: data processing → feature engineering → model training → evaluation  
+- Ensemble of **LightGBM, XGBoost, CatBoost**  
+- Advanced **time-series feature engineering (50+ features)**  
+- Robust validation with **Stratified 7-Fold Cross Validation**  
+- Optimized for **imbalanced classification (AUPRC-focused)**  
+
+---
+
+## ⚙️ Pipeline Overview
+
+### 1. Data Processing
+- Extract features from raw student activity logs  
+- Handle missing values and normalize temporal signals  
+
+### 2. Feature Engineering
+- Behavioral features: submission frequency, time gaps  
+- Temporal patterns: weekday/weekend, time-of-day activity  
+- Performance dynamics:
+  - grade trends (slope)
+  - rolling statistics (mean/std)
+  - momentum & consistency scores  
+
+### 3. Model Training
+- Train 3 gradient boosting models:
+  - LightGBM  
+  - XGBoost  
+  - CatBoost  
+- Use **Stratified 7-Fold CV** to ensure stable evaluation  
+- Generate **Out-of-Fold (OOF) predictions**  
+
+### 4. Ensemble Learning
+- Combine models using:
+  - Stacking (Logistic Regression meta-learner)  
+  - Weighted averaging  
+- Optimize final predictions based on **AUPRC**
+
+---
+
+## 📊 Results
+
+- Strong performance on leaderboard (AUPRC metric)  
+- Improved generalization through ensemble + feature engineering  
+- Robust against class imbalance  
+
+---
+
+## 🛠 Tech Stack
+
+- Python  
+- Pandas, NumPy  
+- Scikit-learn  
+- LightGBM, XGBoost, CatBoost  
+
+---
+
+## 📌 Highlights
+
+- Designed **50+ high-impact features** from raw logs  
+- Built a **reproducible ML pipeline**  
+- Applied **ensemble techniques commonly used in Kaggle competitions**
+
+---
+
+## 📂 Future Improvements
+
+- Add deep learning models (LSTM for sequence modeling)  
+- Feature selection & dimensionality reduction  
+- Real-time prediction system  
+
+---
+
+## 👤 Author
+
+Nguyen Dang Khoa
