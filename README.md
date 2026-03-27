@@ -1,4 +1,4 @@
-# LearnTrack AI: Student Performance Prediction
+# LearnTrack AI: Predictive Academic Modeling
 
 LearnTrack AI is a machine learning pipeline for predicting student pass probability based on behavioral logs and lab submission patterns.
 
